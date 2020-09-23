@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # CHANGELOG
+#
 #   * Tue Aug 19 Jaime Ramirez <jaime.ramirez@redhat.com>
 #   - Restored maven settings file for development mode
 #   * Tue Aug 18 Jaime Ramirez <jaime.ramirez@redhat.com>
