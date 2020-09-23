@@ -49,7 +49,7 @@ TIMEOUT=6
 function lab_config {
 
   # IMPORTANT: Keep this in sync with the course .shlib
-  export RHT_OCP4_CONFIG="development"
+  # export RHT_OCP4_CONFIG="development"
   # export RHT_OCP4_DEFAULTS=/usr/local/etc/ocp4.defaults
 
   source ${RHT_OCP4_DEFAULTS} &>/dev/null
@@ -57,10 +57,10 @@ function lab_config {
     source ${RHT_OCP4_CONFIG} &>/dev/null
   fi
 
-  if [ "${RHT_OCP4_MODE}" != "development" -a "${RHT_OCP4_MODE}" != "administration" ]
-  then
-    fatal 88 "Invalid value for RHT_OCP4_MODE: '${RHT_OCP4_MODE}'"
-  fi
+ # if [ "${RHT_OCP4_MODE}" != "development" -a "${RHT_OCP4_MODE}" != "administration" ]
+  # then
+   # fatal 88 "Invalid value for RHT_OCP4_MODE: '${RHT_OCP4_MODE}'"
+ # fi
 
   ### Start taking input from students
 
