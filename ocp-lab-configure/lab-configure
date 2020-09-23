@@ -49,8 +49,8 @@ TIMEOUT=6
 function lab_config {
 
   # IMPORTANT: Keep this in sync with the course .shlib
-  export RHT_OCP4_CONFIG=/usr/local/etc/ocp4.config
-  export RHT_OCP4_DEFAULTS=/usr/local/etc/ocp4.defaults
+  export RHT_OCP4_CONFIG="development"
+  # export RHT_OCP4_DEFAULTS=/usr/local/etc/ocp4.defaults
 
   source ${RHT_OCP4_DEFAULTS} &>/dev/null
   if [ "$1" != "-d" ]; then
