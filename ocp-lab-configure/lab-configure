@@ -45,6 +45,7 @@
 # timeout for HTTP connections using curl and oc login, in seconds
 TIMEOUT=6
 
+touch
 
 function lab_config {
 
@@ -115,22 +116,22 @@ function lab_config {
 
   # readline ocp_version 'OpenShift version'
 
-  if [ "${RHT_OCP4_MODE}" = "development" ]
-  then
-    save_variable dev_user 'Username'
-    save_variable dev_passwd 'Password'
-    save_variable github_user 'GitHub Account Name'
-    save_variable quay_user 'Quay.io Account Name'
+ # if [ "${RHT_OCP4_MODE}" = "development" ]
+ # then
+  #  save_variable dev_user 'Username'
+   # save_variable dev_passwd 'Password'
+   # save_variable github_user 'GitHub Account Name'
+   # save_variable quay_user 'Quay.io Account Name'
 
-  elif [ "${RHT_OCP4_MODE}" = "administration" ]
-  then
-    save_variable services_vm 'Services VM'
-    save_variable priv_registry 'Private Registry'
-    save_variable bastion_host 'Bastion Host'
-    save_variable kube_auth_src 'Kubeadmin Auth Folder or Zip'
-    save_variable admin_user 'Cluster Administrator User name'
-    save_variable admin_passwd 'Cluster Administrator User Password'
-  fi
+ # elif [ "${RHT_OCP4_MODE}" = "administration" ]
+ # then
+  #  save_variable services_vm 'Services VM'
+   # save_variable priv_registry 'Private Registry'
+   # save_variable bastion_host 'Bastion Host'
+  #  save_variable kube_auth_src 'Kubeadmin Auth Folder or Zip'
+  #  save_variable admin_user 'Cluster Administrator User name'
+  #  save_variable admin_passwd 'Cluster Administrator User Password'
+ # fi
 
   ### Display data provided by the student
 
