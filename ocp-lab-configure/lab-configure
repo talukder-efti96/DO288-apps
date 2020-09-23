@@ -92,7 +92,7 @@ echo "line 65"
   local quay_user="${RHT_OCP4_QUAY_USER}"
 
   # These variables are used only by administration courses
-
+echo "line 95"
   # Save two copies of the kubeadmin auth files: one for lab scripts, other for
   # commands the student types in exercises
   local kube_auth_src="${RHT_OCP4_KUBEAUTH_SRC:-/home/student/Dowloads/auth.zip}"
@@ -157,7 +157,7 @@ echo "line 65"
   fi
 
   ### Display generated config
-
+echo "line 160"
   echo
   echo 'Generated config:'
   echo -e " · API Endpoint:\t\t\t${master_api}"
@@ -278,7 +278,7 @@ echo "line 65"
     if ! [ -r "${kube_auth_tmp}/kubeadmin-password" ]; then
       fatal 4 "${kube_auth_src} does not contain a kubeadmin-password file."
     fi
-
+echo "line 281"
     echo
     echo 'Verifying your kubeadmin authentication files...'
     export KUBECONFIG="${kube_auth_tmp}/kubeconfig"
@@ -309,7 +309,7 @@ echo "line 65"
     fi
 
   fi
-
+echo "line 312"
   # Perform these checks in the end because they require an authenticated user
 
   #XXX OCP4 allows only cluster admins to view these resources by default.
@@ -371,7 +371,7 @@ echo "line 65"
     rm -rf "${kube_auth_tmp}"
 
   fi
-
+echo "line 374"
   ### Tell students we are done
 
   echo
@@ -411,7 +411,7 @@ function save_variable {
 
   save_config
 }
-
+echo "line 414"
 
 function readline {
   local return_var="$1"
@@ -469,7 +469,7 @@ EOFADM"
 
   fi
 }
-
+echo "line 472"
 
 if ! which oc &>/dev/null
 then
