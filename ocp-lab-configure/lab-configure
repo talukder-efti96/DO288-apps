@@ -45,7 +45,7 @@
 # timeout for HTTP connections using curl and oc login, in seconds
 TIMEOUT=6
 
-touch
+echo "line 48"
 
 function lab_config {
 
@@ -62,7 +62,7 @@ function lab_config {
   # then
    # fatal 88 "Invalid value for RHT_OCP4_MODE: '${RHT_OCP4_MODE}'"
  # fi
-
+echo "line 65"
   ### Start taking input from students
 
   # There are two levels of defaults: from the ocp4.defaults file and hard-coded here.
